@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import PixelGrid from './components/PixelGrid';
+import ControlPanel from './components/ControlPanel';
+import usePixelArt from './hooks/usePixelArt';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { grid, togglePixel, mirrorGrid, clearGrid } = usePixelArt();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen flex flex-col items-center justify-center p-8">
+      <div className="bg-white rounded-2xl p-8 max-w-md w-full">
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
+            Pixel Art Creator
+          </h1>
+          <p className="text-gray-600 text-sm">
+            Create retro pixel art one click at a time!
+          </p>
+        </div>
+
+        <div className="flex justify-center mb-6">
+          <PixelGrid grid={grid} onPixelClick={togglePixel} />
+        </div>
+
+        <ControlPanel onMirror={mirrorGrid} onClear={clearGrid} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
