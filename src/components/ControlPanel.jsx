@@ -1,21 +1,33 @@
 import React from 'react';
 
-const ControlPanel = ({ onMirror, onClear }) => {
+const ControlPanel = ({ onMirror, onClear, onSave }) => {
   return (
-    <div className="flex gap-4 justify-center mt-6">
+    <div className="flex flex-wrap gap-3 justify-center mt-8">
       <button
         onClick={onMirror}
-        className="retro-button"
+        className="mirror-button"
         title="Mirror your pixel art horizontally"
       >
-        🪞 Mirror Magic
+        <span className="mr-2">🪞</span>
+        Mirror
       </button>
+      
+      <button
+        onClick={onSave}
+        className="save-button"
+        title="Save your pixel art as PNG"
+      >
+        <span className="mr-2">💾</span>
+        Save PNG
+      </button>
+      
       <button
         onClick={onClear}
         className="clear-button"
         title="Clear the canvas for a fresh start"
       >
-        🧹 Fresh Start
+        <span className="mr-2">🧹</span>
+        Clear
       </button>
     </div>
   );
