@@ -1,8 +1,5 @@
-import React from 'react';
-
 const PixelGrid = ({ 
   grid, 
-  onPixelClick, 
   onMouseDown, 
   onMouseEnter, 
   onMouseUp,

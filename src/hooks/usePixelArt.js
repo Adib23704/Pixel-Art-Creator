@@ -6,7 +6,7 @@ const usePixelArt = () => {
   );
   
   const [isDragging, setIsDragging] = useState(false);
-  const [dragMode, setDragMode] = useState(null); // 'paint' or 'erase'
+  const [_dragMode, setDragMode] = useState(null);
   const dragModeRef = useRef(null);
 
   const togglePixel = useCallback((row, col) => {
@@ -61,7 +61,6 @@ const usePixelArt = () => {
   return {
     grid,
     isDragging,
-    togglePixel,
     startDrag,
     handleDrag,
     endDrag,

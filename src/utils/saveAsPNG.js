@@ -2,17 +2,14 @@ export const saveGridAsPNG = (grid, filename = 'pixel-art') => {
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   
-  // Set canvas size (scale up for better quality)
-  const pixelSize = 50; // Each pixel will be 50x50 in the PNG
+  const pixelSize = 50;
   const canvasSize = 8 * pixelSize;
   canvas.width = canvasSize;
   canvas.height = canvasSize;
   
-  // Set white background
   ctx.fillStyle = '#ffffff';
   ctx.fillRect(0, 0, canvasSize, canvasSize);
   
-  // Draw the pixel grid
   grid.forEach((row, rowIndex) => {
     row.forEach((pixel, colIndex) => {
       if (pixel) {
@@ -27,7 +24,6 @@ export const saveGridAsPNG = (grid, filename = 'pixel-art') => {
     });
   });
   
-  // Create download link
   canvas.toBlob((blob) => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');

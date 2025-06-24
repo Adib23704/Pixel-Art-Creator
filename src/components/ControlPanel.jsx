@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ControlPanel = ({ onMirror, onClear, onSave }) => {
   return (
     <div className="flex flex-wrap gap-3 justify-center mt-8">
