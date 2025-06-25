@@ -39,9 +39,9 @@ function App() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
       </div>
 
-      <div className="glass-card rounded-3xl p-8 max-w-lg w-full relative z-10">
+      <div className="glass-card rounded-3xl p-4 sm:p-8 max-w-lg w-full relative z-10">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-3">
+          <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-3">
             <span className="text-white">🎮</span> Pixel Art Creator
           </h1>
           <p className="text-gray-600 text-sm font-medium">

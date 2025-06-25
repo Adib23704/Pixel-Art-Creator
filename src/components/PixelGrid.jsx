@@ -10,12 +10,12 @@ const PixelGrid = ({
       className="pixel-grid-container select-none"
       onMouseLeave={onMouseUp}
     >
-      <div className="grid grid-cols-8 gap-1">
+      <div className="grid grid-cols-8 gap-1 w-full">
         {grid.map((row, rowIndex) =>
           row.map((pixel, colIndex) => (
             <div
               key={`${rowIndex}-${colIndex}`}
-              className={`pixel-square ${pixel ? 'pixel-on' : 'pixel-off'}`}
+              className={`pixel-square aspect-square ${pixel ? 'pixel-on' : 'pixel-off'}`}
               onMouseDown={(e) => {
                 e.preventDefault();
                 onMouseDown(rowIndex, colIndex);

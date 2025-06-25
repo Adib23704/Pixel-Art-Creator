@@ -1,12 +1,11 @@
 const ControlPanel = ({ onMirror, onClear, onSave }) => {
   return (
-    <div className="flex flex-wrap gap-3 justify-center mt-8">
+    <div className="flex flex-wrap gap-2 sm:gap-3 justify-center mt-8">
       <button
         onClick={onMirror}
         className="mirror-button"
         title="Mirror your pixel art horizontally"
       >
-        <span className="mr-2">🪞</span>
         Mirror
       </button>
       
@@ -15,8 +14,7 @@ const ControlPanel = ({ onMirror, onClear, onSave }) => {
         className="save-button"
         title="Save your pixel art as PNG"
       >
-        <span className="mr-2">💾</span>
-        Save PNG
+        Save
       </button>
       
       <button
@@ -24,7 +22,6 @@ const ControlPanel = ({ onMirror, onClear, onSave }) => {
         className="clear-button"
         title="Clear the canvas for a fresh start"
       >
-        <span className="mr-2">🧹</span>
         Clear
       </button>
     </div>
