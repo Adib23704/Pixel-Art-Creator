@@ -25,7 +25,7 @@ A pixel art creator designed in React and Vite and made to be fun and interactiv
 <summary>Video</summary>
 
 <p>
-  <video src="https://raw.githubusercontent.com/Adib23704/Pixel-Art-Creator/refs/heads/master/public/screenshots/demo.mp4" width="450" controls></video>
+  <video src="https://github.com/user-attachments/assets/5ce1887b-bf2c-4f40-a10c-b7fb1842878f" width="450" controls></video>
 </p>
 
 </details>
