@@ -18,7 +18,7 @@ A pixel art creator designed in React and Vite and made to be fun and interactiv
 <details>
 <summary>Photo</summary>
 
-![Pixel Art Creator Screenshot](./public/screenshots/1.png)
+![Pixel Art Creator Screenshot](https://github.com/user-attachments/assets/0beca581-5a74-49b0-9140-4b59f9106e9c)
 
 </details>
 <details>
