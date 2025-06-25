@@ -45,7 +45,7 @@ function App() {
             <span className="text-white">🎮</span> Pixel Art Creator
           </h1>
           <p className="text-gray-600 text-sm font-medium">
-            Click and drag to create • Mirror to flip • Save your masterpiece
+            Built with 💖 by <a href="https://adibdev.me" target="_blank"><b>Adib</b></a>
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-3 rounded-full"></div>
         </div>
